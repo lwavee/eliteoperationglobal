@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EliteOps Global (EOG) | Global Back Office & Digital Solutions Partner</title>
+  <meta name="description" content="Helping businesses scale with Virtual Assistance, Web Development, Administrative Support, Insurance Processing, Educational ERPs, and Business Automation.">
+  <link rel="icon" href="logo.png">
+
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- LOADING SCREEN ANIMATION -->
+  <div class="loading-screen">
+    <div class="loading-aura"></div>
+    <div style="position: relative; z-index: 10; display: flex; flex-direction: column; align-items: center;">
+      <img src="logo.png" alt="EliteOps Global" style="height: 3.5rem; width: auto; margin-bottom: 1rem; filter: var(--logo-filter);">
+      <p style="font-size: 0.75rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--royal-500);">Initializing Operational Network...</p>
+      <div class="loading-bar-wrapper">
+        <div class="loading-bar-inner"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TRAILING CUSTOM CURSOR -->
+  <div class="custom-cursor"></div>
+  <div class="custom-cursor-dot"></div>
+
+  <!-- HEADER NAVBAR -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo-link">
+        <img src="logo.png" alt="EliteOps Global Logo">
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item">
+            <a href="#services" class="nav-link">Services <i class="fa-solid fa-chevron-down" style="font-size: 0.65rem;"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="#services" class="dropdown-link">Virtual Assistance</a></li>
+              <li><a href="#services" class="dropdown-link">Administrative Support</a></li>
+              <li><a href="#services" class="dropdown-link">Insurance Back Office</a></li>
+              <li><a href="#services" class="dropdown-link">Web Development</a></li>
+              <li><a href="#services" class="dropdown-link">School ERP Solutions</a></li>
+              <li><a href="#services" class="dropdown-link">E-Commerce Management</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#industries" class="nav-link">Industries <i class="fa-solid fa-chevron-down" style="font-size: 0.65rem;"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="industries/insurance.html" class="dropdown-link">Insurance Agencies</a></li>
+              <li><a href="industries/education.html" class="dropdown-link">Educational Institutions</a></li>
+              <li><a href="industries/healthcare.html" class="dropdown-link">Healthcare & Clinics</a></li>
+              <li><a href="industries/real-estate.html" class="dropdown-link">Real Estate & Finance</a></li>
+              <li><a href="industries/startups.html" class="dropdown-link">Startups & SMEs</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="#process" class="nav-link">Process</a></li>
+          <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li class="nav-item"><a href="#faq" class="nav-link">FAQ</a></li>
+          <li class="nav-item"><a href="#careers" class="nav-link">Careers</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn-theme-toggle theme-toggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-shine">Book Free Consultation</a>
+        <button class="mobile-toggle" aria-label="Open Mobile Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#industries" class="nav-link">Industries</a>
+      <a href="#process" class="nav-link">Process</a>
+      <a href="#portfolio" class="nav-link">Portfolio</a>
+      <a href="#faq" class="nav-link">FAQ</a>
+      <a href="#careers" class="nav-link">Careers</a>
+      <a href="#contact" class="btn btn-primary btn-shine" style="width: 100%; text-align: center;">Book Free Consultation</a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="badge">
+          <span style="width: 8px; height: 8px; border-radius: 50%; background: #10b981; display: inline-block;"></span>
+          24/7 Global Operations Active
+        </div>
+
+        <h1 class="hero-title">
+          Enterprise-grade Back Office & <br>
+          <span class="text-gradient">Digital Transformation</span>
+        </h1>
+
+        <p class="hero-desc">
+          EliteOps Global delivers dedicated staffing teams, automated data queues, and custom web applications to cut operating costs and accelerate business performance worldwide.
+        </p>
+
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="#contact" class="btn btn-primary btn-shine">Book Free Consultation <i class="fa-solid fa-calendar-check"></i></a>
+          <a href="#contact" class="btn btn-secondary btn-shine">Request a Proposal</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="glass-card stat-card">
+            <h4>4x Faster Onboarding</h4>
+            <p>Launch project queues within 10 business days.</p>
+          </div>
+          <div class="glass-card stat-card" style="border-left-color: #3b82f6;">
+            <h4>ISO-Certified Security</h4>
+            <p>Strict NDA protocols and encrypted VPN gates.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ANIMATED GLOBE COMPONENT WITH FLOATING SLA BADGES -->
+      <div class="globe-container">
+        <div class="floating-badge floating-badge-1">
+          <i class="fa-solid fa-bolt" style="color: #fbbf24; font-size: 1.1rem;"></i>
+          <div>
+            <h5 style="font-size: 0.75rem; color: var(--text-heading); font-weight: 700;">Global Delivery</h5>
+            <p style="font-size: 0.65rem; color: var(--text-muted);">24/7 Shift Coverage</p>
+          </div>
+        </div>
+
+        <div class="globe-sphere">
+          <div class="globe-ring"></div>
+          <div class="globe-ring-inner"></div>
+          <div class="globe-scan-line"></div>
+          <div class="ping-dot" style="top: 35%; left: 40%;"></div>
+          <div class="ping-dot" style="top: 60%; left: 65%;"></div>
+          <div class="ping-dot" style="top: 45%; left: 75%;"></div>
+          <i class="fa-solid fa-globe" style="font-size: 5rem; color: rgba(255, 255, 255, 0.25);"></i>
+        </div>
+
+        <div class="floating-badge floating-badge-2">
+          <i class="fa-solid fa-shield-halved" style="color: #10b981; font-size: 1.1rem;"></i>
+          <div>
+            <h5 style="font-size: 0.75rem; color: var(--text-heading); font-weight: 700;">99.8% Accuracy</h5>
+            <p style="font-size: 0.65rem; color: var(--text-muted);">Strict Quality SLA</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFINITE MARQUEE CLIENT LOGO TICKER -->
+  <div class="border-t border-b bg-alt" style="padding: 1.5rem 0;">
+    <div class="marquee-wrapper">
+      <div class="marquee-mask-left"></div>
+      <div class="marquee-mask-right"></div>
+      <div class="marquee-track">
+        <span style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); display: flex; align-items: center; gap: 2rem;">
+          <span>STERLING WHOLESALE INSURANCE</span> &bull;
+          <span>AMS PROJECT ENTERPRISE</span> &bull;
+          <span>CAPCO DIGITAL</span> &bull;
+          <span>BEACON INSURANCE GROUP</span> &bull;
+          <span>ST. JUDE ACADEMY</span> &bull;
+          <span>APEX HEALTHCARE</span> &bull;
+          <span>STERLING WHOLESALE INSURANCE</span> &bull;
+          <span>AMS PROJECT ENTERPRISE</span> &bull;
+          <span>CAPCO DIGITAL</span> &bull;
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- STATS BAR -->
+  <section class="bg-alt border-b" style="padding: 3rem 0;">
+    <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem; text-align: center;">
+      <div>
+        <h3 class="text-gradient" style="font-size: 2.5rem; font-weight: 800;">10+</h3>
+        <p style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); margin-top: 0.25rem;">Years BPO Experience</p>
+      </div>
+      <div>
+        <h3 class="text-gradient" style="font-size: 2.5rem; font-weight: 800;">ISO</h3>
+        <p style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); margin-top: 0.25rem;">Data Security Standard</p>
+      </div>
+      <div>
+        <h3 class="text-gradient" style="font-size: 2.5rem; font-weight: 800;">250+</h3>
+        <p style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted); margin-top: 0.25rem;">Operations Deployed</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about">
+    <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 3rem; align-items: center;">
+      <div>
+        <span class="badge" style="margin-bottom: 1rem;">Who We Are</span>
+        <h2 style="font-size: 2.25rem; font-weight: 800; color: var(--text-heading); margin-bottom: 1rem;">
+          EliteOps Global Delivers Scalable Operational Excellence
+        </h2>
+        <p style="color: var(--text-sub); margin-bottom: 1.5rem;">
+          EliteOps Global is a professional outsourcing and technology company delivering reliable back-office operations, website development, virtual assistance, administrative support, insurance processing, educational management solutions, and digital transformation services for businesses worldwide.
+        </p>
+
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div class="glass-card" style="padding: 1.25rem;">
+            <h4 style="font-size: 0.9rem; margin-bottom: 0.5rem; color: var(--royal-500);"><i class="fa-solid fa-rocket"></i> Our Mission</h4>
+            <p style="font-size: 0.75rem; color: var(--text-muted);">Empower global enterprises with precise, secure, and flexible digital back-office assets.</p>
+          </div>
+          <div class="glass-card" style="padding: 1.25rem;">
+            <h4 style="font-size: 0.9rem; margin-bottom: 0.5rem; color: var(--royal-500);"><i class="fa-solid fa-lightbulb"></i> Our Vision</h4>
+            <p style="font-size: 0.75rem; color: var(--text-muted);">Lead the virtual assistance and ERP space with AI workflows and human QA verification.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;">
+        <div class="glass-card" style="text-align: center;">
+          <h3 class="text-gradient" style="font-size: 2.5rem; font-weight: 800;">10+</h3>
+          <p style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted);">Years Experience</p>
+        </div>
+        <div class="glass-card" style="text-align: center;">
+          <h3 class="text-gradient" style="font-size: 2.5rem; font-weight: 800;">250+</h3>
+          <p style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted);">Projects Done</p>
+        </div>
+        <div class="glass-card" style="text-align: center;">
+          <h3 class="text-gradient" style="font-size: 2.5rem; font-weight: 800;">15+</h3>
+          <p style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted);">Countries Served</p>
+        </div>
+        <div class="glass-card" style="text-align: center;">
+          <h3 class="text-gradient" style="font-size: 2.5rem; font-weight: 800;">98%</h3>
+          <p style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted);">Client Retention</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES SECTION -->
+  <section id="services" class="bg-alt border-t">
+    <div class="container">
+      <div style="text-align: center; max-width: 36rem; margin: 0 auto 3rem;">
+        <span class="badge">Our Services</span>
+        <h2 style="font-size: 2.25rem; font-weight: 800; color: var(--text-heading); margin-top: 0.5rem;">
+          Complete Enterprise Operations Directory
+        </h2>
+        <p style="color: var(--text-sub); font-size: 0.9rem; margin-top: 0.5rem;">
+          From business automation to virtual inboxes, our customized services provide global support tailored to your standards.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <div class="glass-card">
+          <div class="service-icon"><i class="fa-solid fa-headset"></i></div>
+          <h3 style="font-size: 1.1rem; color: var(--text-heading); margin-bottom: 0.5rem;">Virtual Assistance</h3>
+          <p style="font-size: 0.8rem; color: var(--text-sub);">Email management, calendar sync, CRM maintenance, meeting prep, and scheduling.</p>
+        </div>
+
+        <div class="glass-card">
+          <div class="service-icon"><i class="fa-solid fa-briefcase"></i></div>
+          <h3 style="font-size: 1.1rem; color: var(--text-heading); margin-bottom: 0.5rem;">Administrative Support</h3>
+          <p style="font-size: 0.8rem; color: var(--text-sub);">Travel arrangements, document digitizing, follow-up calls, and client communication logs.</p>
+        </div>
+
+        <div class="glass-card">
+          <div class="service-icon"><i class="fa-solid fa-file-contract"></i></div>
+          <h3 style="font-size: 1.1rem; color: var(--text-heading); margin-bottom: 0.5rem;">Insurance Back Office</h3>
+          <p style="font-size: 0.8rem; color: var(--text-sub);">Detailed policy entry, claims intake processing, renewal verification, and quote comparisons.</p>
+        </div>
+
+        <div class="glass-card">
+          <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3 style="font-size: 1.1rem; color: var(--text-heading); margin-bottom: 0.5rem;">Web Development</h3>
+          <p style="font-size: 0.8rem; color: var(--text-sub);">Modern landing pages, Next.js sites, customized web applications, and database management.</p>
+        </div>
+
+        <div class="glass-card">
+          <div class="service-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <h3 style="font-size: 1.1rem; color: var(--text-heading); margin-bottom: 0.5rem;">School & College ERP</h3>
+          <p style="font-size: 0.8rem; color: var(--text-sub);">Dynamic ERP student portals, fee management grids, LMS modules, and result dashboards.</p>
+        </div>
+
+        <div class="glass-card">
+          <div class="service-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+          <h3 style="font-size: 1.1rem; color: var(--text-heading); margin-bottom: 0.5rem;">E-Commerce Solutions</h3>
+          <p style="font-size: 0.8rem; color: var(--text-sub);">Shopify storefront configurations, product entry, stock auditing, and secure payout gateways.</p>
+        </div>
+
+        <div class="glass-card">
+          <div class="service-icon"><i class="fa-solid fa-rotate"></i></div>
+          <h3 style="font-size: 1.1rem; color: var(--text-heading); margin-bottom: 0.5rem;">Business Automation</h3>
+          <p style="font-size: 0.8rem; color: var(--text-sub);">Workflow design, email auto-responders, CRM API syncs, and custom process optimization.</p>
+        </div>
+
+        <div class="glass-card">
+          <div class="service-icon"><i class="fa-solid fa-database"></i></div>
+          <h3 style="font-size: 1.1rem; color: var(--text-heading); margin-bottom: 0.5rem;">Data Processing</h3>
+          <p style="font-size: 0.8rem; color: var(--text-sub);">Medical files coding, product catalogue uploads, Excel data parsing, and image annotations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRIES WE SERVE -->
+  <section id="industries">
+    <div class="container">
+      <div style="text-align: center; max-width: 36rem; margin: 0 auto 3rem;">
+        <span class="badge">Industries We Serve</span>
+        <h2 style="font-size: 2.25rem; font-weight: 800; color: var(--text-heading); margin-top: 0.5rem;">
+          Targeted Back Office Domain Expertise
+        </h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem;">
+        <a href="industries/insurance.html" class="glass-card" style="display: flex; justify-content: space-between; align-items: center;">
+          <span style="font-weight: 700; color: var(--text-heading);">Insurance Agencies</span>
+          <i class="fa-solid fa-arrow-right" style="color: var(--royal-500);"></i>
+        </a>
+        <a href="industries/education.html" class="glass-card" style="display: flex; justify-content: space-between; align-items: center;">
+          <span style="font-weight: 700; color: var(--text-heading);">Educational Institutions</span>
+          <i class="fa-solid fa-arrow-right" style="color: var(--royal-500);"></i>
+        </a>
+        <a href="industries/healthcare.html" class="glass-card" style="display: flex; justify-content: space-between; align-items: center;">
+          <span style="font-weight: 700; color: var(--text-heading);">Hospitals & Healthcare</span>
+          <i class="fa-solid fa-arrow-right" style="color: var(--royal-500);"></i>
+        </a>
+        <a href="industries/real-estate.html" class="glass-card" style="display: flex; justify-content: space-between; align-items: center;">
+          <span style="font-weight: 700; color: var(--text-heading);">Real Estate & Finance</span>
+          <i class="fa-solid fa-arrow-right" style="color: var(--royal-500);"></i>
+        </a>
+        <a href="industries/startups.html" class="glass-card" style="display: flex; justify-content: space-between; align-items: center;">
+          <span style="font-weight: 700; color: var(--text-heading);">Startups & SMEs</span>
+          <i class="fa-solid fa-arrow-right" style="color: var(--royal-500);"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS TIMELINE -->
+  <section id="process" class="bg-alt border-t">
+    <div class="container">
+      <div style="text-align: center; max-width: 36rem; margin: 0 auto 3rem;">
+        <span class="badge">Our Process</span>
+        <h2 style="font-size: 2.25rem; font-weight: 800; color: var(--text-heading); margin-top: 0.5rem;">
+          How We Onboard & Execute
+        </h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem;">
+        <div class="glass-card">
+          <span class="text-gradient" style="font-size: 2rem; font-weight: 800;">01</span>
+          <h3 style="font-size: 1.1rem; color: var(--text-heading); margin: 0.5rem 0;">Consultation</h3>
+          <p style="font-size: 0.8rem; color: var(--text-sub);">Discuss your scaling bottlenecks and specific service requirements.</p>
+        </div>
+        <div class="glass-card">
+          <span class="text-gradient" style="font-size: 2rem; font-weight: 800;">02</span>
+          <h3 style="font-size: 1.1rem; color: var(--text-heading); margin: 0.5rem 0;">Analysis</h3>
+          <p style="font-size: 0.8rem; color: var(--text-sub);">Our operational experts detail workflows, resources, and SLA expectations.</p>
+        </div>
+        <div class="glass-card">
+          <span class="text-gradient" style="font-size: 2rem; font-weight: 800;">03</span>
+          <h3 style="font-size: 1.1rem; color: var(--text-heading); margin: 0.5rem 0;">Planning</h3>
+          <p style="font-size: 0.8rem; color: var(--text-sub);">Define project scope, build custom teams, and establish secure network gates.</p>
+        </div>
+        <div class="glass-card">
+          <span class="text-gradient" style="font-size: 2rem; font-weight: 800;">04</span>
+          <h3 style="font-size: 1.1rem; color: var(--text-heading); margin: 0.5rem 0;">Execution</h3>
+          <p style="font-size: 0.8rem; color: var(--text-sub);">Commence active service operations with direct slack updates and stats.</p>
+        </div>
+        <div class="glass-card">
+          <span class="text-gradient" style="font-size: 2rem; font-weight: 800;">05</span>
+          <h3 style="font-size: 1.1rem; color: var(--text-heading); margin: 0.5rem 0;">Quality Check</h3>
+          <p style="font-size: 0.8rem; color: var(--text-sub);">Daily compliance and accuracy reviews under a dedicated QA Manager.</p>
+        </div>
+        <div class="glass-card">
+          <span class="text-gradient" style="font-size: 2rem; font-weight: 800;">06</span>
+          <h3 style="font-size: 1.1rem; color: var(--text-heading); margin: 0.5rem 0;">Delivery & Support</h3>
+          <p style="font-size: 0.8rem; color: var(--text-sub);">Seamless daily execution backed by a 24/7 service infrastructure.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO CASE STUDIES WITH HIGH RES UI MOCKUP IMAGES -->
+  <section id="portfolio">
+    <div class="container">
+      <div style="text-align: center; max-width: 36rem; margin: 0 auto 3rem;">
+        <span class="badge">Live Client Portfolio</span>
+        <h2 style="font-size: 2.25rem; font-weight: 800; color: var(--text-heading); margin-top: 0.5rem;">
+          Deployed Enterprise Platforms
+        </h2>
+      </div>
+
+      <div class="portfolio-tabs">
+        <button class="tab-btn active" data-category="all">All</button>
+        <button class="tab-btn" data-category="insurance">Insurance</button>
+        <button class="tab-btn" data-category="automation">Automation</button>
+        <button class="tab-btn" data-category="websites">Websites</button>
+      </div>
+
+      <div class="portfolio-grid">
+        <!-- ITEM 1: STERLING WHOLESALE INSURANCE -->
+        <div class="glass-card portfolio-card" data-category="insurance" style="padding: 0; overflow: hidden;">
+          <div style="height: 14rem; overflow: hidden; position: relative;">
+            <img src="portfolio/sterling.png" alt="Sterling Wholesale Insurance" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+            <span class="tag" style="position: absolute; top: 1rem; right: 1rem; background: rgba(3,7,18,0.85); color: var(--royal-400); border: 1px solid rgba(96,165,250,0.3);">Insurance Tech</span>
+          </div>
+          <div style="padding: 1.75rem; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1;">
+            <div>
+              <div style="display: flex; justify-content: space-between; font-size: 0.7rem; color: var(--text-muted); margin-bottom: 0.5rem; font-weight: 700;">
+                <span>CLIENT: STERLING INSURANCE</span>
+                <span>2025</span>
+              </div>
+              <h4 style="font-size: 1.1rem; color: var(--text-heading); margin-bottom: 0.5rem;">Sterling Wholesale Insurance Portal</h4>
+              <p style="font-size: 0.8rem; color: var(--text-sub); margin-bottom: 1rem;">Commercial P&C insurance broker portal featuring policy intake, rating comparisons, wholesale quote submission, and client dashboard.</p>
+              <div style="display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
+                <span class="tag">Insurance Tech</span>
+                <span class="tag">Broker Portal</span>
+                <span class="tag">Policy Management</span>
+              </div>
+            </div>
+            <a href="https://app.sterlingwholesaleinsurance.com/signin" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-shine" style="width: 100%; font-size: 0.75rem;">
+              <i class="fa-solid fa-rocket"></i> Visit Live Platform <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- ITEM 2: AMS PROJECT -->
+        <div class="glass-card portfolio-card" data-category="automation" style="padding: 0; overflow: hidden;">
+          <div style="height: 14rem; overflow: hidden; position: relative;">
+            <img src="portfolio/ams.png" alt="AMS Project System" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+            <span class="tag" style="position: absolute; top: 1rem; right: 1rem; background: rgba(3,7,18,0.85); color: var(--royal-400); border: 1px solid rgba(96,165,250,0.3);">Agency ERP</span>
+          </div>
+          <div style="padding: 1.75rem; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1;">
+            <div>
+              <div style="display: flex; justify-content: space-between; font-size: 0.7rem; color: var(--text-muted); margin-bottom: 0.5rem; font-weight: 700;">
+                <span>CLIENT: AMS ENTERPRISE</span>
+                <span>2025</span>
+              </div>
+              <h4 style="font-size: 1.1rem; color: var(--text-heading); margin-bottom: 0.5rem;">AMS Project Management System</h4>
+              <p style="font-size: 0.8rem; color: var(--text-sub); margin-bottom: 1rem;">Full-stack agency management system with automated workflow queues, staff shift allocation, and real-time task auditing.</p>
+              <div style="display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
+                <span class="tag">Agency ERP</span>
+                <span class="tag">Task Queues</span>
+                <span class="tag">Automation</span>
+              </div>
+            </div>
+            <a href="https://ams-project-frontend.vercel.app/login" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-shine" style="width: 100%; font-size: 0.75rem;">
+              <i class="fa-solid fa-rocket"></i> Visit Live Platform <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- ITEM 3: CAPCO CORPORATE PLATFORM -->
+        <div class="glass-card portfolio-card" data-category="websites" style="padding: 0; overflow: hidden;">
+          <div style="height: 14rem; overflow: hidden; position: relative;">
+            <img src="portfolio/capco.png" alt="Capco Corporate Platform" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+            <span class="tag" style="position: absolute; top: 1rem; right: 1rem; background: rgba(3,7,18,0.85); color: var(--royal-400); border: 1px solid rgba(96,165,250,0.3);">Corporate SaaS</span>
+          </div>
+          <div style="padding: 1.75rem; display: flex; flex-direction: column; justify-content: space-between; flex-grow: 1;">
+            <div>
+              <div style="display: flex; justify-content: space-between; font-size: 0.7rem; color: var(--text-muted); margin-bottom: 0.5rem; font-weight: 700;">
+                <span>CLIENT: CAPCO DIGITAL</span>
+                <span>2025</span>
+              </div>
+              <h4 style="font-size: 1.1rem; color: var(--text-heading); margin-bottom: 0.5rem;">Capco Corporate Digital Suite</h4>
+              <p style="font-size: 0.8rem; color: var(--text-sub); margin-bottom: 1rem;">High-performance corporate web platform featuring interactive service modules, client onboarding flows, and analytics dashboards.</p>
+              <div style="display: flex; gap: 0.4rem; flex-wrap: wrap; margin-bottom: 1.5rem;">
+                <span class="tag">Corporate SaaS</span>
+                <span class="tag">Next.js App</span>
+                <span class="tag">Analytics</span>
+              </div>
+            </div>
+            <a href="https://capco-eight.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-shine" style="width: 100%; font-size: 0.75rem;">
+              <i class="fa-solid fa-rocket"></i> Visit Live Platform <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS SLIDER -->
+  <section class="bg-alt border-t">
+    <div class="container">
+      <div style="text-align: center; max-width: 36rem; margin: 0 auto;">
+        <span class="badge">Client Reviews</span>
+        <h2 style="font-size: 2.25rem; font-weight: 800; color: var(--text-heading); margin-top: 0.5rem;">
+          What Our Enterprise Partners Say
+        </h2>
+      </div>
+
+      <div class="testimonial-container">
+        <div class="testimonial-slide">
+          <div style="color: #f59e0b; margin-bottom: 1rem;">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <blockquote class="testimonial-quote">
+            "EliteOps Global has transformed our policy backlog process. Their insurance back-office team is fast, detailed, and adheres to strict quality checks. Saved us 35% in admin overhead."
+          </blockquote>
+          <p class="testimonial-author">Sarah Jenkins</p>
+          <p style="font-size: 0.8rem; color: var(--royal-500);">Chief Operations Officer, Sterling Wholesale Insurance</p>
+        </div>
+
+        <div class="testimonial-slide" style="display: none;">
+          <div style="color: #f59e0b; margin-bottom: 1rem;">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+          </div>
+          <blockquote class="testimonial-quote">
+            "The custom AMS ERP built by EOG streamlined our team task allocations, time tracking, and workflow reporting. Highly capable and trustworthy technology team."
+          </blockquote>
+          <p class="testimonial-author">Marcus Vance</p>
+          <p style="font-size: 0.8rem; color: var(--royal-500);">Head of Operations, AMS Project</p>
+        </div>
+
+        <div class="testimonial-nav">
+          <button class="btn-theme-toggle testimonial-prev"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="btn-theme-toggle testimonial-next"><i class="fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING PACKAGES -->
+  <section>
+    <div class="container">
+      <div style="text-align: center; max-width: 36rem; margin: 0 auto 3rem;">
+        <span class="badge">Pricing Packages</span>
+        <h2 style="font-size: 2.25rem; font-weight: 800; color: var(--text-heading); margin-top: 0.5rem;">
+          Transparent Plans Tailored to Scale
+        </h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 2rem;">
+        <div class="glass-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <h3 style="font-size: 1.25rem; color: var(--text-heading);">Starter VA</h3>
+            <p style="font-size: 0.8rem; color: var(--text-sub); margin-top: 0.25rem;">For small businesses needing inbox & calendar sync.</p>
+            <h2 style="font-size: 2.25rem; font-weight: 800; color: var(--text-heading); margin: 1rem 0;">$899 <span style="font-size: 0.8rem; font-weight: 400; color: var(--text-muted);">/ mo</span></h2>
+            <ul class="footer-links" style="margin-top: 1rem;">
+              <li><i class="fa-solid fa-check" style="color: #10b981;"></i> 20 Hours / Week Allocation</li>
+              <li><i class="fa-solid fa-check" style="color: #10b981;"></i> Email & Inbox Maintenance</li>
+              <li><i class="fa-solid fa-check" style="color: #10b981;"></i> Dedicated Manager Support</li>
+            </ul>
+          </div>
+          <a href="#contact" class="btn btn-secondary btn-shine" style="margin-top: 2rem; width: 100%; text-align: center;">Get Started</a>
+        </div>
+
+        <div class="glass-card" style="display: flex; flex-direction: column; justify-content: space-between; border-color: var(--royal-500);">
+          <div>
+            <span class="badge" style="font-size: 0.65rem;">Popular</span>
+            <h3 style="font-size: 1.25rem; color: var(--text-heading); margin-top: 0.5rem;">Professional VA</h3>
+            <p style="font-size: 0.8rem; color: var(--text-sub); margin-top: 0.25rem;">For mid-size agencies needing daily operational help.</p>
+            <h2 style="font-size: 2.25rem; font-weight: 800; color: var(--text-heading); margin: 1rem 0;">$1,599 <span style="font-size: 0.8rem; font-weight: 400; color: var(--text-muted);">/ mo</span></h2>
+            <ul class="footer-links" style="margin-top: 1rem;">
+              <li><i class="fa-solid fa-check" style="color: #10b981;"></i> 40 Hours / Week Allocation</li>
+              <li><i class="fa-solid fa-check" style="color: #10b981;"></i> Inboxes, Scheduling & CRM</li>
+              <li><i class="fa-solid fa-check" style="color: #10b981;"></i> Real-time Slack Updates</li>
+            </ul>
+          </div>
+          <a href="#contact" class="btn btn-primary btn-shine" style="margin-top: 2rem; width: 100%; text-align: center;">Get Started</a>
+        </div>
+
+        <div class="glass-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <h3 style="font-size: 1.25rem; color: var(--text-heading);">Enterprise SLA</h3>
+            <p style="font-size: 0.8rem; color: var(--text-sub); margin-top: 0.25rem;">For large operations or multi-agent squads.</p>
+            <h2 style="font-size: 2.25rem; font-weight: 800; color: var(--text-heading); margin: 1rem 0;">$2,999 <span style="font-size: 0.8rem; font-weight: 400; color: var(--text-muted);">/ mo</span></h2>
+            <ul class="footer-links" style="margin-top: 1rem;">
+              <li><i class="fa-solid fa-check" style="color: #10b981;"></i> 2 Dedicated Full-Time VAs</li>
+              <li><i class="fa-solid fa-check" style="color: #10b981;"></i> QA Reviews & SLA Coverage</li>
+              <li><i class="fa-solid fa-check" style="color: #10b981;"></i> Encrypted VPN Gateways</li>
+            </ul>
+          </div>
+          <a href="#contact" class="btn btn-secondary btn-shine" style="margin-top: 2rem; width: 100%; text-align: center;">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section id="faq" class="bg-alt border-t">
+    <div class="container">
+      <div style="text-align: center; max-width: 36rem; margin: 0 auto;">
+        <span class="badge">FAQ</span>
+        <h2 style="font-size: 2.25rem; font-weight: 800; color: var(--text-heading); margin-top: 0.5rem;">
+          Frequently Asked Questions
+        </h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item active">
+          <button class="faq-question">
+            How fast can EliteOps Global onboard a remote squad?
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            Our typical onboarding cycle takes 5 to 10 business days. We map SOP workflows, configure secure VPN gates, and assign qualified project managers.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Is client data protected under strict security & NDA protocols?
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            Yes. Every team member executes comprehensive NDA agreements. We operate isolated endpoints with encrypted storage complying with ISO and HIPAA guidelines.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            How does form notification work on this static website?
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            All consultation form submissions automatically send email notifications directly to eliteopsglobal@gmail.com instantly.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact">
+    <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 4rem;">
+      <div>
+        <span class="badge">Get In Touch</span>
+        <h2 style="font-size: 2.25rem; font-weight: 800; color: var(--text-heading); margin: 0.5rem 0 1rem;">
+          Let's Scale Your Operations
+        </h2>
+        <p style="color: var(--text-sub); margin-bottom: 2rem;">
+          Ready to delegate your data queues or develop a web application? Fill out our form to connect directly with an EOG specialist.
+        </p>
+
+        <!-- Premium Glass Contact Cards -->
+        <div style="display: flex; flex-direction: column; gap: 1rem;">
+          <div class="glass-card" style="padding: 1.25rem; display: flex; align-items: center; gap: 1rem;">
+            <div class="service-icon" style="margin-bottom: 0; width: 2.75rem; height: 2.75rem; font-size: 1.1rem;">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div>
+              <p style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted);">Direct Phone</p>
+              <a href="tel:+918005669833" style="font-size: 0.95rem; font-weight: 700; color: var(--text-heading);">+91 80056 69833</a>
+            </div>
+          </div>
+
+          <div class="glass-card" style="padding: 1.25rem; display: flex; align-items: center; gap: 1rem;">
+            <div class="service-icon" style="margin-bottom: 0; width: 2.75rem; height: 2.75rem; font-size: 1.1rem;">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div>
+              <p style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted);">Official Email</p>
+              <a href="mailto:eliteopsglobal@gmail.com" style="font-size: 0.95rem; font-weight: 700; color: var(--royal-500);">eliteopsglobal@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="glass-card" style="padding: 1.25rem; display: flex; align-items: center; gap: 1rem;">
+            <div class="service-icon" style="margin-bottom: 0; width: 2.75rem; height: 2.75rem; font-size: 1.1rem;">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <div>
+              <p style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted);">Production Web URL</p>
+              <a href="https://eliteog.vercel.app/" target="_blank" style="font-size: 0.95rem; font-weight: 700; color: var(--text-heading);">https://eliteog.vercel.app/</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass-card" style="padding: 2.5rem;">
+        <h3 style="font-size: 1.25rem; color: var(--text-heading); margin-bottom: 1.5rem;">Consultation Form</h3>
+        
+        <form id="contact-form" action="https://formsubmit.co/eliteopsglobal@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="New Website Consultation Inquiry - EliteOps Global">
+          <input type="hidden" name="_captcha" value="false">
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Full Name *</label>
+              <input type="text" name="name" required placeholder="John Doe">
+            </div>
+            <div class="form-group">
+              <label>Company Name</label>
+              <input type="text" name="company" placeholder="Acme Corp">
+            </div>
+            <div class="form-group">
+              <label>Phone Number</label>
+              <input type="text" name="phone" placeholder="+1 (555) 000-0000">
+            </div>
+            <div class="form-group">
+              <label>Email Address *</label>
+              <input type="email" name="email" required placeholder="john@example.com">
+            </div>
+            <div class="form-group full">
+              <label>Service Required</label>
+              <select name="service">
+                <option value="Virtual Assistance">Virtual Assistance</option>
+                <option value="Administrative Support">Administrative Support</option>
+                <option value="Insurance Back Office">Insurance Back Office</option>
+                <option value="Web Development">Web Development</option>
+                <option value="School ERP Solutions">School ERP Solutions</option>
+                <option value="Business Automation">Business Automation</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label>Message *</label>
+              <textarea name="message" rows="4" required placeholder="Tell us about your project requirements..."></textarea>
+            </div>
+            <div class="form-group full" style="margin-top: 0.5rem;">
+              <button type="submit" class="btn btn-primary btn-shine" style="width: 100%;">Send Inquiry</button>
+            </div>
+          </div>
+          <div class="form-msg" style="margin-top: 1rem; display: none; font-size: 0.85rem; padding: 0.75rem; border-radius: 0.5rem; text-align: center;"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- CAREERS SECTION -->
+  <section id="careers" class="bg-alt border-t">
+    <div class="container">
+      <div style="text-align: center; max-width: 36rem; margin: 0 auto 3rem;">
+        <span class="badge">Careers</span>
+        <h2 style="font-size: 2.25rem; font-weight: 800; color: var(--text-heading); margin-top: 0.5rem;">
+          Join Our Global Team
+        </h2>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+        <div class="glass-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.75rem; font-weight: 700; color: var(--royal-500); margin-bottom: 0.5rem;">
+              <span>FULL-TIME</span>
+              <span>REMOTE</span>
+            </div>
+            <h3 style="font-size: 1.1rem; color: var(--text-heading); margin-bottom: 0.5rem;">Insurance Back Office Specialist</h3>
+            <p style="font-size: 0.8rem; color: var(--text-sub);">Process insurance claims entry, verify client policy renewals, and compare premium quotes.</p>
+          </div>
+          <button class="btn btn-secondary btn-apply btn-shine" data-position="Insurance Back Office Specialist" style="margin-top: 1.5rem; width: 100%;">Apply Now</button>
+        </div>
+
+        <div class="glass-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.75rem; font-weight: 700; color: var(--royal-500); margin-bottom: 0.5rem;">
+              <span>FULL-TIME</span>
+              <span>REMOTE</span>
+            </div>
+            <h3 style="font-size: 1.1rem; color: var(--text-heading); margin-bottom: 0.5rem;">Virtual Assistant Executive</h3>
+            <p style="font-size: 0.8rem; color: var(--text-sub);">Manage client inbox schedules, arrange calendar travel sheets, and run outbound leads campaigns.</p>
+          </div>
+          <button class="btn btn-secondary btn-apply btn-shine" data-position="Virtual Assistant Executive" style="margin-top: 1.5rem; width: 100%;">Apply Now</button>
+        </div>
+
+        <div class="glass-card" style="display: flex; flex-direction: column; justify-content: space-between;">
+          <div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.75rem; font-weight: 700; color: var(--royal-500); margin-bottom: 0.5rem;">
+              <span>FULL-TIME</span>
+              <span>REMOTE</span>
+            </div>
+            <h3 style="font-size: 1.1rem; color: var(--text-heading); margin-bottom: 0.5rem;">Junior Web Developer (React / NextJS)</h3>
+            <p style="font-size: 0.8rem; color: var(--text-sub);">Develop responsive client dashboards, integrate APIs, and build clean landing layouts.</p>
+          </div>
+          <button class="btn btn-secondary btn-apply btn-shine" data-position="Junior Web Developer" style="margin-top: 1.5rem; width: 100%;">Apply Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FLOATING ACTION BUTTON (FAB) -->
+  <a href="#contact" class="fab-contact" aria-label="Contact Us">
+    <i class="fa-solid fa-envelope"></i>
+  </a>
+
+  <!-- CAREER APPLICATION MODAL -->
+  <div class="modal-overlay">
+    <div class="modal-box">
+      <h3 style="font-size: 1.25rem; color: var(--text-heading); margin-bottom: 0.25rem;">Apply for Position</h3>
+      <p class="modal-position-title" style="font-size: 0.85rem; color: var(--royal-500); font-weight: 600; margin-bottom: 1.5rem;"></p>
+
+      <form id="career-form" action="https://formsubmit.co/eliteopsglobal@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New Career Application - EliteOps Global">
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label>Full Name *</label>
+          <input type="text" name="name" required placeholder="Jane Doe">
+        </div>
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label>Email Address *</label>
+          <input type="email" name="email" required placeholder="jane@example.com">
+        </div>
+        <div class="form-group" style="margin-bottom: 1rem;">
+          <label>Phone Number *</label>
+          <input type="text" name="phone" required placeholder="+1 (555) 000-0000">
+        </div>
+        <div class="form-group" style="margin-bottom: 1.5rem;">
+          <label>Cover Note / Relevant Experience *</label>
+          <textarea name="message" rows="3" required placeholder="Briefly describe your experience..."></textarea>
+        </div>
+
+        <div style="display: flex; gap: 1rem;">
+          <button type="button" class="btn btn-secondary modal-close" style="width: 50%;">Cancel</button>
+          <button type="submit" class="btn btn-primary btn-shine" style="width: 50%;">Submit</button>
+        </div>
+        <div class="form-msg" style="margin-top: 1rem; display: none; font-size: 0.8rem; text-align: center;"></div>
+      </form>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="index.html" class="logo-link">
+          <img src="logo.png" alt="EliteOps Global Logo">
+        </a>
+        <p style="font-size: 0.85rem; color: var(--text-sub); margin-top: 1rem; max-width: 22rem;">
+          EliteOps Global (EOG) is an enterprise outsourcing and digital transformation partner delivering reliable back-office operations worldwide.
+        </p>
+      </div>
+
+      <div>
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="#services">Virtual Assistance</a></li>
+          <li><a href="#services">Web Development</a></li>
+          <li><a href="#services">Insurance Back Office</a></li>
+          <li><a href="#services">School ERP Solutions</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Industries</h4>
+        <ul class="footer-links">
+          <li><a href="industries/insurance.html">Insurance Agencies</a></li>
+          <li><a href="industries/education.html">Educational Solutions</a></li>
+          <li><a href="industries/healthcare.html">Hospitals & Clinics</a></li>
+          <li><a href="industries/real-estate.html">Real Estate & Finance</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Newsletter</h4>
+        <p style="font-size: 0.8rem; color: var(--text-sub); margin-bottom: 1rem;">Stay updated with industry insights and tech trends.</p>
+        <form id="newsletter-form" action="https://formsubmit.co/eliteopsglobal@gmail.com" method="POST">
+          <input type="email" name="newsletter_email" required placeholder="Your email" style="font-size: 0.8rem;">
+          <button type="submit" class="btn btn-primary btn-shine" style="padding: 0.6rem 1rem;"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+        <div class="form-msg" style="margin-top: 0.5rem; display: none; font-size: 0.75rem;"></div>
+      </div>
+    </div>
+
+    <div class="container border-t" style="padding-top: 2rem; display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--text-muted); flex-wrap: wrap; gap: 1rem;">
+      <p>&copy; 2026 EliteOps Global. All rights reserved.</p>
+      <div>Email: <a href="mailto:eliteopsglobal@gmail.com" style="color: var(--royal-500); font-weight: 700;">eliteopsglobal@gmail.com</a></div>
+    </div>
+  </footer>
+
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>
