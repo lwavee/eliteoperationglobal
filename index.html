@@ -685,6 +685,7 @@
         <form id="contact-form" action="https://formsubmit.co/eliteopsglobal@gmail.com" method="POST">
           <input type="hidden" name="_subject" value="New Website Consultation Inquiry - EliteOps Global">
           <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
 
           <div class="form-grid">
             <div class="form-group">
@@ -791,6 +792,10 @@
 
       <form id="career-form" action="https://formsubmit.co/eliteopsglobal@gmail.com" method="POST">
         <input type="hidden" name="_subject" value="New Career Application - EliteOps Global">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="applied_position" id="modal-position-input" value="General Application">
+
         <div class="form-group" style="margin-bottom: 1rem;">
           <label>Full Name *</label>
           <input type="text" name="name" required placeholder="Jane Doe">
@@ -853,7 +858,10 @@
         <h4>Newsletter</h4>
         <p style="font-size: 0.8rem; color: var(--text-sub); margin-bottom: 1rem;">Stay updated with industry insights and tech trends.</p>
         <form id="newsletter-form" action="https://formsubmit.co/eliteopsglobal@gmail.com" method="POST">
-          <input type="email" name="newsletter_email" required placeholder="Your email" style="font-size: 0.8rem;">
+          <input type="hidden" name="_subject" value="New Newsletter Subscription - EliteOps Global">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="email" name="email" required placeholder="Your email" style="font-size: 0.8rem;">
           <button type="submit" class="btn btn-primary btn-shine" style="padding: 0.6rem 1rem;"><i class="fa-solid fa-paper-plane"></i></button>
         </form>
         <div class="form-msg" style="margin-top: 0.5rem; display: none; font-size: 0.75rem;"></div>

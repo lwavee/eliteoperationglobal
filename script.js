@@ -202,12 +202,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const applyBtns = document.querySelectorAll('.btn-apply');
   const modalOverlay = document.querySelector('.modal-overlay');
   const modalPositionLabel = document.querySelector('.modal-position-title');
+  const modalPositionInput = document.querySelector('#modal-position-input');
   const closeModalBtn = document.querySelector('.modal-close');
 
   applyBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       const position = btn.getAttribute('data-position') || 'Open Position';
       if (modalPositionLabel) modalPositionLabel.textContent = position;
+      if (modalPositionInput) modalPositionInput.value = position;
       if (modalOverlay) modalOverlay.classList.add('open');
     });
   });
@@ -221,15 +223,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // --- 11. IN-PAGE AJAX EMAIL NOTIFICATIONS (NO PAGE REDIRECTION) ---
+  // --- 11. PRODUCTION-READY FORMSUBMIT AJAX ENGINE & DIRECT FALLBACK ---
   const sendFormInPageAJAX = async (formElement, statusElement) => {
     const formData = new FormData(formElement);
     const submitBtn = formElement.querySelector('button[type="submit"]');
-    
+    const originalBtnHTML = submitBtn ? submitBtn.innerHTML : 'Submit';
+
     if (submitBtn) {
       submitBtn.disabled = true;
-      submitBtn.dataset.originalText = submitBtn.innerHTML;
-      submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending...';
+      submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Submitting...';
     }
 
     if (statusElement) {
@@ -237,11 +239,17 @@ document.addEventListener('DOMContentLoaded', () => {
       statusElement.style.background = 'rgba(37, 99, 235, 0.1)';
       statusElement.style.color = '#2563eb';
       statusElement.style.border = '1px solid rgba(37, 99, 235, 0.2)';
-      statusElement.textContent = 'Sending your message...';
+      statusElement.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> Sending your message to EliteOps Global...';
     }
 
+    // Determine target AJAX endpoint
+    const actionUrl = formElement.getAttribute('action') || 'https://formsubmit.co/eliteopsglobal@gmail.com';
+    const ajaxEndpoint = actionUrl.includes('/ajax/') 
+      ? actionUrl 
+      : actionUrl.replace('formsubmit.co/', 'formsubmit.co/ajax/');
+
     try {
-      const response = await fetch('https://formsubmit.co/ajax/eliteopsglobal@gmail.com', {
+      const response = await fetch(ajaxEndpoint, {
         method: 'POST',
         headers: {
           'Accept': 'application/json'
@@ -249,32 +257,55 @@ document.addEventListener('DOMContentLoaded', () => {
         body: formData
       });
 
-      const result = await response.json();
-      if (response.ok || result.success === 'true' || result.success === true) {
+      const result = await response.json().catch(() => null);
+
+      if (response.ok && result && (result.success === 'true' || result.success === true)) {
+        // Genuine Success confirmed by FormSubmit API
         if (statusElement) {
           statusElement.style.background = 'rgba(16, 185, 129, 0.15)';
           statusElement.style.color = '#10b981';
           statusElement.style.border = '1px solid rgba(16, 185, 129, 0.3)';
-          statusElement.innerHTML = '<i class="fa-solid fa-circle-check"></i> Thank you! Your inquiry has been sent to EliteOps Global. We will contact you shortly.';
+          statusElement.innerHTML = '<i class="fa-solid fa-circle-check"></i> Thank you! Your message has been sent to EliteOps Global. We will contact you shortly.';
         }
         formElement.reset();
-        if (modalOverlay) setTimeout(() => modalOverlay.classList.remove('open'), 2500);
+        if (modalOverlay && formElement.id === 'career-form') {
+          setTimeout(() => modalOverlay.classList.remove('open'), 2500);
+        }
       } else {
-        throw new Error(result.message || 'Submission failed.');
+        // FormSubmit API returned error status or activation required
+        const errorMsg = (result && result.message) ? result.message : `HTTP status ${response.status}`;
+        console.error('FormSubmit Submission Failed:', errorMsg, result);
+
+        if (statusElement) {
+          statusElement.style.background = 'rgba(239, 68, 68, 0.15)';
+          statusElement.style.color = '#ef4444';
+          statusElement.style.border = '1px solid rgba(239, 68, 68, 0.3)';
+          statusElement.innerHTML = `<i class="fa-solid fa-triangle-exclamation"></i> Submission error: ${errorMsg}. Submitting directly...`;
+        }
+
+        // Native fallback submit (no fake success, forces direct POST submit to FormSubmit)
+        setTimeout(() => {
+          formElement.submit();
+        }, 1200);
       }
     } catch (err) {
-      // In case AJAX fails or blocked by local browser origin, fallback to direct post
+      console.error('Network / CORS error during FormSubmit fetch:', err);
+
       if (statusElement) {
-        statusElement.style.background = 'rgba(16, 185, 129, 0.15)';
-        statusElement.style.color = '#10b981';
-        statusElement.style.border = '1px solid rgba(16, 185, 129, 0.3)';
-        statusElement.innerHTML = '<i class="fa-solid fa-circle-check"></i> Inquiry dispatched successfully to EliteOps Global!';
+        statusElement.style.background = 'rgba(239, 68, 68, 0.15)';
+        statusElement.style.color = '#ef4444';
+        statusElement.style.border = '1px solid rgba(239, 68, 68, 0.3)';
+        statusElement.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> Network connection issue. Dispatching via direct form submission...';
       }
-      formElement.reset();
+
+      // Native fallback submit
+      setTimeout(() => {
+        formElement.submit();
+      }, 1200);
     } finally {
       if (submitBtn) {
         submitBtn.disabled = false;
-        submitBtn.innerHTML = submitBtn.dataset.originalText || 'Submit';
+        submitBtn.innerHTML = originalBtnHTML;
       }
     }
   };
@@ -306,3 +337,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 });
+
