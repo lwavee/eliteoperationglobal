@@ -1,7 +1,7 @@
 /* ==========================================================================
    EliteOps Global (EOG) - Static JavaScript Animation & Interaction Engine
    Activated FormSubmit In-Page AJAX Engine (No Redirection to External Pages)
-   Target Email: eliteopsglobal@gmail.com
+   Target Email: info@eliteopsglobal.com
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -37,15 +37,28 @@ document.addEventListener('DOMContentLoaded', () => {
     requestAnimationFrame(animateCursor);
   }
 
-  // --- 3. DARK MODE / LIGHT MODE ENGINE ---
+  // --- 3. DARK MODE / LIGHT MODE ENGINE (DEFAULT: LIGHT MODE) ---
   const themeToggleBtns = document.querySelectorAll('.theme-toggle');
 
   const savedTheme = localStorage.getItem('theme');
-  if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+  if (savedTheme === 'dark') {
     document.documentElement.classList.add('dark');
   } else {
     document.documentElement.classList.remove('dark');
   }
+
+  const updatePortfolioImages = () => {
+    const isDark = document.documentElement.classList.contains('dark');
+    document.querySelectorAll('.portfolio-theme-img').forEach(img => {
+      const darkSrc = img.getAttribute('data-dark-img');
+      const lightSrc = img.getAttribute('data-light-img');
+      if (isDark && darkSrc) {
+        img.src = darkSrc;
+      } else if (!isDark && lightSrc) {
+        img.src = lightSrc;
+      }
+    });
+  };
 
   const updateIcons = () => {
     const isDark = document.documentElement.classList.contains('dark');
@@ -54,6 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ? '<i class="fa-solid fa-sun" style="color: #fbbf24;"></i>' 
         : '<i class="fa-solid fa-moon" style="color: #2563eb;"></i>';
     });
+    updatePortfolioImages();
   };
   updateIcons();
 
@@ -243,7 +257,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Determine target AJAX endpoint
-    const actionUrl = formElement.getAttribute('action') || 'https://formsubmit.co/eliteopsglobal@gmail.com';
+    const actionUrl = formElement.getAttribute('action') || 'https://formsubmit.co/info@eliteopsglobal.com';
     const ajaxEndpoint = actionUrl.includes('/ajax/') 
       ? actionUrl 
       : actionUrl.replace('formsubmit.co/', 'formsubmit.co/ajax/');
@@ -328,6 +342,43 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // --- 12. PRICING BILLING TOGGLE (MONTHLY VS ANNUAL) ---
+  const pricingCheckbox = document.querySelector('#pricing-billing-toggle');
+  const priceElements = document.querySelectorAll('.price-amount');
+
+  if (pricingCheckbox && priceElements.length > 0) {
+    pricingCheckbox.addEventListener('change', () => {
+      const isAnnual = pricingCheckbox.checked;
+      document.querySelectorAll('.pricing-toggle-label').forEach((lbl, idx) => {
+        if ((idx === 0 && !isAnnual) || (idx === 1 && isAnnual)) {
+          lbl.classList.add('active');
+        } else {
+          lbl.classList.remove('active');
+        }
+      });
+
+      priceElements.forEach(el => {
+        const monthlyVal = el.getAttribute('data-monthly');
+        const annualVal = el.getAttribute('data-annual');
+        if (isAnnual && annualVal) {
+          el.innerHTML = `${annualVal} <span style="font-size: 0.8rem; font-weight: 400; color: var(--text-muted);">/ mo (billed annually)</span>`;
+        } else if (monthlyVal) {
+          el.innerHTML = `${monthlyVal} <span style="font-size: 0.8rem; font-weight: 400; color: var(--text-muted);">/ mo</span>`;
+        }
+      });
+    });
+  }
+
+  // --- 13. ESCAPE KEY & GLOBAL MODAL DISMISSAL ---
+  window.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      document.querySelectorAll('.modal-overlay.open').forEach(modal => {
+        modal.classList.remove('open');
+      });
+      document.body.classList.remove('modal-open');
+    }
+  });
+
   const newsletterForm = document.querySelector('#newsletter-form');
   if (newsletterForm) {
     newsletterForm.addEventListener('submit', (e) => {
@@ -336,5 +387,27 @@ document.addEventListener('DOMContentLoaded', () => {
       sendFormInPageAJAX(newsletterForm, statusEl);
     });
   }
+
+  // --- 14. LUXURY HUD PHASE TABS SWITCHER ---
+  const hudTabs = document.querySelectorAll('.hud-phase-tab');
+  const hudPhaseBlocks = document.querySelectorAll('.hud-phase-block');
+
+  hudTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      const targetPhase = tab.getAttribute('data-phase');
+      hudTabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+
+      hudPhaseBlocks.forEach(block => {
+        if (block.getAttribute('data-phase-content') === targetPhase) {
+          block.style.display = 'grid';
+        } else {
+          block.style.display = 'none';
+        }
+      });
+    });
+  });
 });
+
+
 

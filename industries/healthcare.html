@@ -3,8 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Healthcare & Clinic Systems | EliteOps Global</title>
+  <title>Healthcare & Clinic Back Office | EliteOps Global</title>
+  <meta name="description" content="HIPAA-compliant administrative support, medical records data entry, EHR systems, and clinical appointment management.">
   <link rel="icon" href="../logo.png">
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Healthcare & Clinic Back Office | EliteOps Global">
+  <meta property="og:description" content="HIPAA-compliant medical coding, EHR data entry, patient intake scheduling, and billing back-office operations.">
+  <meta property="og:image" content="https://eliteog.vercel.app/logo.png">
+  <meta property="og:url" content="https://eliteog.vercel.app/industries/healthcare.html">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -12,33 +21,406 @@
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
+
+  <!-- TRAILING CUSTOM CURSOR -->
+  <div class="custom-cursor"></div>
+  <div class="custom-cursor-dot"></div>
+
+  <!-- HEADER NAVBAR -->
   <header class="header scrolled">
     <div class="container nav-container">
-      <a href="../index.html" class="logo-link"><img src="../logo.png" alt="EliteOps Global Logo"></a>
+      <a href="../index.html" class="logo-link">
+        <img src="../logo.png" alt="EliteOps Global Logo">
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li class="nav-item">
+            <a href="../index.html#industries" class="nav-link">Industries <i class="fa-solid fa-chevron-down" style="font-size: 0.65rem;"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="insurance.html" class="dropdown-link">Insurance Agencies</a></li>
+              <li><a href="education.html" class="dropdown-link">Educational Institutions</a></li>
+              <li><a href="healthcare.html" class="dropdown-link">Healthcare & Clinics</a></li>
+              <li><a href="real-estate.html" class="dropdown-link">Real Estate & Finance</a></li>
+              <li><a href="startups.html" class="dropdown-link">Startups & SMEs</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="../index.html#process" class="nav-link">Process</a></li>
+          <li class="nav-item">
+            <a href="../index.html#services" class="nav-link">Services <i class="fa-solid fa-chevron-down" style="font-size: 0.65rem;"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="../services/virtual-assistance.html" class="dropdown-link">Virtual Assistance</a></li>
+              <li><a href="../services/administrative-support.html" class="dropdown-link">Administrative Support</a></li>
+              <li><a href="../services/web-development.html" class="dropdown-link">Web Development</a></li>
+              <li><a href="../services/business-automation.html" class="dropdown-link">Business Automation</a></li>
+              <li><a href="../services/e-commerce-management.html" class="dropdown-link">E-Commerce Management</a></li>
+              <li><a href="../services/data-processing.html" class="dropdown-link">Data Processing</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="../index.html#portfolio" class="nav-link">Portfolio</a></li>
+          <li class="nav-item"><a href="../index.html#faq" class="nav-link">FAQ</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
       <div class="nav-actions">
-        <button class="btn-theme-toggle theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
-        <a href="../index.html#contact" class="btn btn-primary">Book Free Consultation</a>
+        <button class="btn-theme-toggle theme-toggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-shine">Book Free Consultation</a>
+        <button class="mobile-toggle" aria-label="Open Mobile Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer">
+      <a href="../index.html#about" class="nav-link">About</a>
+      <a href="../index.html#services" class="nav-link">Services</a>
+      <a href="../index.html#industries" class="nav-link">Industries</a>
+      <a href="../index.html#process" class="nav-link">Process</a>
+      <a href="../index.html#portfolio" class="nav-link">Portfolio</a>
+      <a href="../index.html#faq" class="nav-link">FAQ</a>
+      <a href="../index.html#careers" class="nav-link">Careers</a>
+      <a href="#contact" class="btn btn-primary btn-shine" style="width: 100%; text-align: center;">Book Free Consultation</a>
     </div>
   </header>
 
-  <section class="hero" style="min-height: 60vh; text-align: center;">
+  <!-- HERO SECTION -->
+  <section class="hero" style="min-height: 60vh; text-align: center; padding-top: 8rem;">
     <div class="container" style="max-width: 54rem;">
       <a href="../index.html" style="font-size: 0.8rem; font-weight: 700; color: var(--royal-500); text-transform: uppercase; display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: 1.5rem;">
         <i class="fa-solid fa-arrow-left"></i> Back to Home
       </a>
-      <span class="badge" style="display: block; width: fit-content; margin: 0 auto 1rem;">Industry Showcase</span>
-      <h1 class="hero-title">Healthcare & Clinic Systems</h1>
+      <span class="badge" style="display: block; width: fit-content; margin: 0 auto 1rem;">Healthcare Operations Vertical</span>
+      <h1 class="hero-title">Healthcare & Clinic Back Office</h1>
       <p class="hero-desc" style="margin: 0 auto 2rem;">
-        HIPAA-Compliant Administrative, Appointment, and Medical Records Data Processing.
+        HIPAA-compliant patient scheduling, medical records transcription, EHR data entry, and medical insurance billing under strict BAA data privacy protocols.
       </p>
-      <a href="../index.html#contact" class="btn btn-primary">Inquire Now</a>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="#contact" class="btn btn-primary btn-shine">Consult Healthcare Ops <i class="fa-solid fa-notes-medical"></i></a>
+        <a href="#solutions" class="btn btn-secondary btn-shine">View Clinical Modules</a>
+      </div>
     </div>
   </section>
 
+  <!-- METRICS BAR -->
+  <section class="bg-alt border-t border-b" style="padding: 3rem 0; text-align: center;">
+    <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
+      <div>
+        <h3 class="text-gradient" style="font-size: 2.5rem; font-weight: 800;">100%</h3>
+        <p style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted);">HIPAA Data Privacy Protocol</p>
+      </div>
+      <div>
+        <h3 class="text-gradient" style="font-size: 2.5rem; font-weight: 800;">99.5%</h3>
+        <p style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted);">Medical Coding & EHR Accuracy</p>
+      </div>
+      <div>
+        <h3 class="text-gradient" style="font-size: 2.5rem; font-weight: 800;">24/7</h3>
+        <p style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted);">Patient Desk & Appointment Support</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAIN POINTS / CHALLENGES WE SOLVE -->
+  <section style="padding: 5rem 0;">
+    <div class="container">
+      <div style="text-align: center; max-width: 36rem; margin: 0 auto 3rem;">
+        <span class="badge">Clinical Operational Bottlenecks</span>
+        <h2 style="font-size: 2.25rem; font-weight: 800; color: var(--text-heading); margin-top: 0.5rem;">
+          Challenges Modern Medical Practices Face
+        </h2>
+        <p style="color: var(--text-sub); font-size: 0.9rem; margin-top: 0.5rem;">
+          Physicians and clinic managers waste over 3 hours daily on administrative paperwork, billing follow-ups, and patient call handling.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+        <div class="glass-card">
+          <div class="service-icon" style="background: rgba(239, 68, 68, 0.1); color: #ef4444;">
+            <i class="fa-solid fa-user-clock"></i>
+          </div>
+          <h3 style="font-size: 1.1rem; color: var(--text-heading); margin: 0.75rem 0 0.5rem;">Physician Burnout</h3>
+          <p style="font-size: 0.8rem; color: var(--text-sub);">Excessive EHR charting and prescription transcription pull doctors away from patient care and cause staff burnout.</p>
+        </div>
+
+        <div class="glass-card">
+          <div class="service-icon" style="background: rgba(245, 158, 11, 0.1); color: #f59e0b;">
+            <i class="fa-solid fa-file-invoice-dollar"></i>
+          </div>
+          <h3 style="font-size: 1.1rem; color: var(--text-heading); margin: 0.75rem 0 0.5rem;">Medical Claim Denials</h3>
+          <p style="font-size: 0.8rem; color: var(--text-sub);">Coding errors (ICD-10 / CPT) and missed insurance pre-authorizations result in rejected claims and delayed practice revenue.</p>
+        </div>
+
+        <div class="glass-card">
+          <div class="service-icon" style="background: rgba(59, 130, 246, 0.1); color: #3b82f6;">
+            <i class="fa-solid fa-phone-slash"></i>
+          </div>
+          <h3 style="font-size: 1.1rem; color: var(--text-heading); margin: 0.75rem 0 0.5rem;">Missed Patient Calls</h3>
+          <p style="font-size: 0.8rem; color: var(--text-sub);">Unanswered appointment calls during peak clinic hours cause patient drop-offs and open slot gaps on doctor schedules.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEEP-DIVE SOLUTIONS MODULES -->
+  <section id="solutions" class="bg-alt border-t border-b" style="padding: 5rem 0;">
+    <div class="container">
+      <div style="text-align: center; max-width: 36rem; margin: 0 auto 3rem;">
+        <span class="badge">Clinical Solutions</span>
+        <h2 style="font-size: 2.25rem; font-weight: 800; color: var(--text-heading); margin-top: 0.5rem;">
+          HIPAA-Compliant Administrative Scope
+        </h2>
+        <p style="color: var(--text-sub); font-size: 0.9rem; margin-top: 0.5rem;">
+          Our trained medical virtual assistants operate securely within your existing EHR/EMR platforms (Epic, Cerner, AthenaHealth).
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+        <div class="glass-card">
+          <div class="service-icon"><i class="fa-solid fa-hospital-user"></i></div>
+          <h3 style="font-size: 1.15rem; color: var(--text-heading); margin-bottom: 0.5rem;">Patient Scheduling & Call Desk</h3>
+          <p style="font-size: 0.8rem; color: var(--text-sub); margin-bottom: 1rem;">24/7 inbound patient call management, appointment confirmations, pre-visit questionnaire dispatch, and telehealth booking setup.</p>
+          <ul style="list-style: none; font-size: 0.75rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.4rem;">
+            <li><i class="fa-solid fa-check" style="color: #10b981;"></i> Zero-Drop Call Queueing</li>
+            <li><i class="fa-solid fa-check" style="color: #10b981;"></i> SMS/Email Appointment Reminders</li>
+          </ul>
+        </div>
+
+        <div class="glass-card">
+          <div class="service-icon"><i class="fa-solid fa-file-medical"></i></div>
+          <h3 style="font-size: 1.15rem; color: var(--text-heading); margin-bottom: 0.5rem;">EHR / EMR Data Entry & Scribing</h3>
+          <p style="font-size: 0.8rem; color: var(--text-sub); margin-bottom: 1rem;">Accurate transcription of audio dictations, lab result uploads, patient chart updates, and prescription renewal logging.</p>
+          <ul style="list-style: none; font-size: 0.75rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.4rem;">
+            <li><i class="fa-solid fa-check" style="color: #10b981;"></i> Certified Remote Medical Scribers</li>
+            <li><i class="fa-solid fa-check" style="color: #10b981;"></i> Epic, Cerner & AthenaHealth Trained</li>
+          </ul>
+        </div>
+
+        <div class="glass-card">
+          <div class="service-icon"><i class="fa-solid fa-notes-medical"></i></div>
+          <h3 style="font-size: 1.15rem; color: var(--text-heading); margin-bottom: 0.5rem;">Insurance Eligibility Verification</h3>
+          <p style="font-size: 0.8rem; color: var(--text-sub); margin-bottom: 1rem;">Pre-verification of patient commercial insurance & Medicare benefits, copay determination, and prior-authorization filing before visits.</p>
+          <ul style="list-style: none; font-size: 0.75rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.4rem;">
+            <li><i class="fa-solid fa-check" style="color: #10b981;"></i> Real-Time Payer Portal Verification</li>
+            <li><i class="fa-solid fa-check" style="color: #10b981;"></i> Reduced Prior-Auth Denials</li>
+          </ul>
+        </div>
+
+        <div class="glass-card">
+          <div class="service-icon"><i class="fa-solid fa-receipt"></i></div>
+          <h3 style="font-size: 1.15rem; color: var(--text-heading); margin-bottom: 0.5rem;">Medical Coding & Claims Billing</h3>
+          <p style="font-size: 0.8rem; color: var(--text-sub); margin-bottom: 1rem;">Precise ICD-10, CPT, and HCPCS medical coding, claim scrub testing, electronic claim submissions, and AR denial follow-ups.</p>
+          <ul style="list-style: none; font-size: 0.75rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.4rem;">
+            <li><i class="fa-solid fa-check" style="color: #10b981;"></i> Certified Professional Coders (CPC)</li>
+            <li><i class="fa-solid fa-check" style="color: #10b981;"></i> 98% First-Pass Clean Claim Rate</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDY PROOF POINT -->
+  <section style="padding: 5rem 0;">
+    <div class="container">
+      <div class="glass-card" style="padding: 3rem; border-color: var(--royal-500); text-align: center;">
+        <span class="badge" style="margin-bottom: 1rem;">Clinical Partner Case Study</span>
+        <h2 style="font-size: 2rem; font-weight: 800; color: var(--text-heading); margin-bottom: 1rem;">
+          Apex Healthcare Clinic Group
+        </h2>
+        <p style="color: var(--text-sub); font-size: 0.95rem; max-width: 40rem; margin: 0 auto 2rem;">
+          Apex Healthcare deployed EOG's HIPAA-compliant medical intake desk across 8 multi-specialty clinics, eliminating 45-minute patient check-in bottlenecks and cutting claim denials by 38%.
+        </p>
+        <div style="display: flex; gap: 3rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem;">
+          <div>
+            <h3 class="text-gradient" style="font-size: 2.5rem; font-weight: 800;">38%</h3>
+            <p style="font-size: 0.75rem; color: var(--text-muted); font-weight: 700;">Reduction in Claim Denials</p>
+          </div>
+          <div>
+            <h3 class="text-gradient" style="font-size: 2.5rem; font-weight: 800;">100%</h3>
+            <p style="font-size: 0.75rem; color: var(--text-muted); font-weight: 700;">HIPAA Audit Compliance</p>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn-primary btn-shine">Schedule Healthcare Consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="bg-alt border-t" style="padding: 5rem 0;">
+    <div class="container">
+      <div style="text-align: center; max-width: 36rem; margin: 0 auto 3rem;">
+        <span class="badge">FAQ</span>
+        <h2 style="font-size: 2.25rem; font-weight: 800; color: var(--text-heading); margin-top: 0.5rem;">
+          Healthcare Operations FAQs
+        </h2>
+      </div>
+
+      <div class="faq-list" style="max-width: 48rem; margin: 0 auto;">
+        <div class="faq-item active">
+          <button class="faq-question">
+            Do you execute Business Associate Agreements (BAA) for HIPAA compliance?
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            Yes. We execute formal Business Associate Agreements (BAA) with all clinical healthcare partners. All remote staff operate in secure environments adhering to HIPAA privacy standards.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Which Electronic Health Record (EHR) platforms are supported?
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            Our medical assistants are pre-trained in leading EHR systems including Epic Systems, Cerner, AthenaHealth, eClinicalWorks, Allscripts, and Kareo.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            How fast can a clinical medical desk be onboarded?
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            Following BAA execution and protocol mapping, we deploy qualified remote medical assistants within 5 to 10 business days.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IN-PAGE EMBEDDED CONSULTATION FORM -->
+  <section id="contact" style="padding: 5rem 0;">
+    <div class="container" style="max-width: 50rem;">
+      <div class="glass-card" style="padding: 3rem;">
+        <div style="text-align: center; margin-bottom: 2rem;">
+          <span class="badge">Book Clinical Consultation</span>
+          <h2 style="font-size: 2rem; font-weight: 800; color: var(--text-heading); margin-top: 0.5rem;">
+            Optimize Your Clinic Operations Today
+          </h2>
+          <p style="color: var(--text-sub); font-size: 0.85rem; margin-top: 0.5rem;">
+            Connect with an EOG healthcare ops specialist to review your patient scheduling, EHR charting, or billing needs.
+          </p>
+        </div>
+
+        <form id="contact-form" action="https://formsubmit.co/info@eliteopsglobal.com" method="POST">
+          <input type="hidden" name="_subject" value="New Healthcare Operations Inquiry - EliteOps Global">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="_honey" style="display:none">
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Full Name *</label>
+              <input type="text" name="name" required placeholder="Dr. Sarah Adams">
+            </div>
+            <div class="form-group">
+              <label>Clinic / Hospital Group Name *</label>
+              <input type="text" name="company" required placeholder="Apex Healthcare Clinic">
+            </div>
+            <div class="form-group">
+              <label>Phone Number *</label>
+              <input type="text" name="phone" required placeholder="+1 (555) 000-0000">
+            </div>
+            <div class="form-group">
+              <label>Work Email Address *</label>
+              <input type="email" name="email" required placeholder="dradams@apexhealth.com">
+            </div>
+            <div class="form-group full">
+              <label>Primary Service Needs</label>
+              <select name="service">
+                <option value="Healthcare - Patient Scheduling & Call Desk" selected>24/7 Patient Intake & Scheduling Desk</option>
+                <option value="Healthcare - EHR Data Entry & Scribing">EHR / EMR Data Entry & Medical Scribing</option>
+                <option value="Healthcare - Insurance Verification">Insurance Eligibility & Prior-Authorizations</option>
+                <option value="Healthcare - Medical Coding & Billing">Medical Coding (ICD-10/CPT) & Claims Billing</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label>Tell Us About Your Clinic Software & Patient Volume *</label>
+              <textarea name="message" rows="4" required placeholder="Mention your EHR system (e.g. AthenaHealth, Epic), monthly patient volume, and main bottleneck..."></textarea>
+            </div>
+            <div class="form-group full" style="margin-top: 0.5rem;">
+              <button type="submit" class="btn btn-primary btn-shine" style="width: 100%;">Submit Healthcare Inquiry <i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+          </div>
+          <div class="form-msg" style="margin-top: 1rem; display: none; font-size: 0.85rem; padding: 0.75rem; border-radius: 0.5rem; text-align: center;"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer class="footer">
-    <div class="container" style="text-align: center; font-size: 0.8rem; color: var(--text-muted);">
-      <p>&copy; 2026 EliteOps Global. All rights reserved. | Inquiries: <a href="mailto:eliteopsglobal@gmail.com" style="color: var(--royal-500);">eliteopsglobal@gmail.com</a></p>
+    <div class="container footer-grid">
+      <div>
+        <a href="../index.html" class="logo-link">
+          <img src="../logo.png" alt="EliteOps Global Logo">
+        </a>
+        <p style="font-size: 0.85rem; color: var(--text-sub); margin-top: 1rem; max-width: 22rem;">
+          EliteOps Global (EOG) is an enterprise outsourcing and digital transformation partner delivering reliable back-office operations worldwide.
+        </p>
+        <div style="display: flex; gap: 0.5rem; margin-top: 1.25rem;">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn" style="width: 2.25rem; height: 2.25rem; font-size: 0.95rem;">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Twitter X" style="width: 2.25rem; height: 2.25rem; font-size: 0.95rem;">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram" style="width: 2.25rem; height: 2.25rem; font-size: 0.95rem;">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook" style="width: 2.25rem; height: 2.25rem; font-size: 0.95rem;">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="WhatsApp" style="width: 2.25rem; height: 2.25rem; font-size: 0.95rem;">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="../services/virtual-assistance.html">Virtual Assistance</a></li>
+          <li><a href="../services/administrative-support.html">Administrative Support</a></li>
+          <li><a href="../services/web-development.html">Web Development</a></li>
+          <li><a href="../services/business-automation.html">Business Automation</a></li>
+          <li><a href="../services/e-commerce-management.html">E-Commerce Management</a></li>
+          <li><a href="../services/data-processing.html">Data Processing</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Industries</h4>
+        <ul class="footer-links">
+          <li><a href="insurance.html">Insurance Agencies</a></li>
+          <li><a href="education.html">Educational Solutions</a></li>
+          <li><a href="healthcare.html">Hospitals & Clinics</a></li>
+          <li><a href="real-estate.html">Real Estate & Finance</a></li>
+          <li><a href="startups.html">Startups & SMEs</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Newsletter</h4>
+        <p style="font-size: 0.8rem; color: var(--text-sub); margin-bottom: 1rem;">Stay updated with industry insights and tech trends.</p>
+        <form id="newsletter-form" action="https://formsubmit.co/info@eliteopsglobal.com" method="POST">
+          <input type="hidden" name="_subject" value="New Newsletter Subscription - EliteOps Global">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="_honey" style="display:none">
+          <input type="email" name="email" required placeholder="Your email" style="font-size: 0.8rem;">
+          <button type="submit" class="btn btn-primary btn-shine" style="padding: 0.6rem 1rem;"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+        <div class="form-msg" style="margin-top: 0.5rem; display: none; font-size: 0.75rem;"></div>
+      </div>
+    </div>
+
+    <div class="container border-t" style="padding-top: 2rem; display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--text-muted); flex-wrap: wrap; gap: 1rem;">
+      <p>&copy; 2026 EliteOps Global. All rights reserved.</p>
+      <div>Email: <a href="mailto:info@eliteopsglobal.com" style="color: var(--royal-500); font-weight: 700;">info@eliteopsglobal.com</a></div>
     </div>
   </footer>
 

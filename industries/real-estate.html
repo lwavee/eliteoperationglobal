@@ -3,8 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Real Estate & Finance Support | EliteOps Global</title>
+  <title>Real Estate & Finance Back Office | EliteOps Global</title>
+  <meta name="description" content="MLS listing uploads, lease auditing, mortgage document pre-qualifications, valuation reports, and real estate transaction coordination.">
   <link rel="icon" href="../logo.png">
+
+  <!-- Open Graph Metadata -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Real Estate & Finance Back Office | EliteOps Global">
+  <meta property="og:description" content="Automate MLS property uploads, tenant screening, lease contract entry, and transaction coordination.">
+  <meta property="og:image" content="https://eliteog.vercel.app/logo.png">
+  <meta property="og:url" content="https://eliteog.vercel.app/industries/real-estate.html">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -12,33 +21,406 @@
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
+
+  <!-- TRAILING CUSTOM CURSOR -->
+  <div class="custom-cursor"></div>
+  <div class="custom-cursor-dot"></div>
+
+  <!-- HEADER NAVBAR -->
   <header class="header scrolled">
     <div class="container nav-container">
-      <a href="../index.html" class="logo-link"><img src="../logo.png" alt="EliteOps Global Logo"></a>
+      <a href="../index.html" class="logo-link">
+        <img src="../logo.png" alt="EliteOps Global Logo">
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li class="nav-item">
+            <a href="../index.html#industries" class="nav-link">Industries <i class="fa-solid fa-chevron-down" style="font-size: 0.65rem;"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="insurance.html" class="dropdown-link">Insurance Agencies</a></li>
+              <li><a href="education.html" class="dropdown-link">Educational Institutions</a></li>
+              <li><a href="healthcare.html" class="dropdown-link">Healthcare & Clinics</a></li>
+              <li><a href="real-estate.html" class="dropdown-link">Real Estate & Finance</a></li>
+              <li><a href="startups.html" class="dropdown-link">Startups & SMEs</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="../index.html#process" class="nav-link">Process</a></li>
+          <li class="nav-item">
+            <a href="../index.html#services" class="nav-link">Services <i class="fa-solid fa-chevron-down" style="font-size: 0.65rem;"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="../services/virtual-assistance.html" class="dropdown-link">Virtual Assistance</a></li>
+              <li><a href="../services/administrative-support.html" class="dropdown-link">Administrative Support</a></li>
+              <li><a href="../services/web-development.html" class="dropdown-link">Web Development</a></li>
+              <li><a href="../services/business-automation.html" class="dropdown-link">Business Automation</a></li>
+              <li><a href="../services/e-commerce-management.html" class="dropdown-link">E-Commerce Management</a></li>
+              <li><a href="../services/data-processing.html" class="dropdown-link">Data Processing</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a href="../index.html#portfolio" class="nav-link">Portfolio</a></li>
+          <li class="nav-item"><a href="../index.html#faq" class="nav-link">FAQ</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
       <div class="nav-actions">
-        <button class="btn-theme-toggle theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
-        <a href="../index.html#contact" class="btn btn-primary">Book Free Consultation</a>
+        <button class="btn-theme-toggle theme-toggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-shine">Book Free Consultation</a>
+        <button class="mobile-toggle" aria-label="Open Mobile Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-drawer">
+      <a href="../index.html#about" class="nav-link">About</a>
+      <a href="../index.html#services" class="nav-link">Services</a>
+      <a href="../index.html#industries" class="nav-link">Industries</a>
+      <a href="../index.html#process" class="nav-link">Process</a>
+      <a href="../index.html#portfolio" class="nav-link">Portfolio</a>
+      <a href="../index.html#faq" class="nav-link">FAQ</a>
+      <a href="../index.html#careers" class="nav-link">Careers</a>
+      <a href="#contact" class="btn btn-primary btn-shine" style="width: 100%; text-align: center;">Book Free Consultation</a>
     </div>
   </header>
 
-  <section class="hero" style="min-height: 60vh; text-align: center;">
+  <!-- HERO SECTION -->
+  <section class="hero" style="min-height: 60vh; text-align: center; padding-top: 8rem;">
     <div class="container" style="max-width: 54rem;">
       <a href="../index.html" style="font-size: 0.8rem; font-weight: 700; color: var(--royal-500); text-transform: uppercase; display: inline-flex; align-items: center; gap: 0.5rem; margin-bottom: 1.5rem;">
         <i class="fa-solid fa-arrow-left"></i> Back to Home
       </a>
-      <span class="badge" style="display: block; width: fit-content; margin: 0 auto 1rem;">Industry Showcase</span>
-      <h1 class="hero-title">Real Estate & Finance Support</h1>
+      <span class="badge" style="display: block; width: fit-content; margin: 0 auto 1rem;">Real Estate & Property Operations</span>
+      <h1 class="hero-title">Real Estate & Finance Back Office</h1>
       <p class="hero-desc" style="margin: 0 auto 2rem;">
-        MLS Listing Uploads, Lease Auditing, Mortgage Document Pre-qualifications, and Valuation Reports.
+        Scale property brokerages and asset management firms with automated MLS listing uploads, lease audits, mortgage pre-qualification, and transaction coordination.
       </p>
-      <a href="../index.html#contact" class="btn btn-primary">Inquire Now</a>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="#contact" class="btn btn-primary btn-shine">Book Real Estate Demo <i class="fa-solid fa-building"></i></a>
+        <a href="#solutions" class="btn btn-secondary btn-shine">Explore Property Scope</a>
+      </div>
     </div>
   </section>
 
+  <!-- METRICS BAR -->
+  <section class="bg-alt border-t border-b" style="padding: 3rem 0; text-align: center;">
+    <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
+      <div>
+        <h3 class="text-gradient" style="font-size: 2.5rem; font-weight: 800;">5,000+</h3>
+        <p style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted);">MLS Listings Uploaded</p>
+      </div>
+      <div>
+        <h3 class="text-gradient" style="font-size: 2.5rem; font-weight: 800;">50%</h3>
+        <p style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted);">Faster Escrow & Closing Cycles</p>
+      </div>
+      <div>
+        <h3 class="text-gradient" style="font-size: 2.5rem; font-weight: 800;">99%</h3>
+        <p style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; color: var(--text-muted);">Lease Audit & Rent Roll Accuracy</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAIN POINTS / CHALLENGES WE SOLVE -->
+  <section style="padding: 5rem 0;">
+    <div class="container">
+      <div style="text-align: center; max-width: 36rem; margin: 0 auto 3rem;">
+        <span class="badge">Brokerage Bottlenecks</span>
+        <h2 style="font-size: 2.25rem; font-weight: 800; color: var(--text-heading); margin-top: 0.5rem;">
+          Challenges Real Estate Agents & Managers Face
+        </h2>
+        <p style="color: var(--text-sub); font-size: 0.9rem; margin-top: 0.5rem;">
+          Top-producing real estate agents waste over 20 hours weekly on paperwork instead of closing buyer and seller deals.
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem;">
+        <div class="glass-card">
+          <div class="service-icon" style="background: rgba(239, 68, 68, 0.1); color: #ef4444;">
+            <i class="fa-solid fa-house-circle-xmark"></i>
+          </div>
+          <h3 style="font-size: 1.1rem; color: var(--text-heading); margin: 0.75rem 0 0.5rem;">Delayed MLS Listings</h3>
+          <p style="font-size: 0.8rem; color: var(--text-sub);">Slow listing data entry and photo uploads across multiple portals (Zillow, Realtor.com) cause missed buyer interest.</p>
+        </div>
+
+        <div class="glass-card">
+          <div class="service-icon" style="background: rgba(245, 158, 11, 0.1); color: #f59e0b;">
+            <i class="fa-solid fa-file-excel"></i>
+          </div>
+          <h3 style="font-size: 1.1rem; color: var(--text-heading); margin: 0.75rem 0 0.5rem;">Manual Lease Auditing</h3>
+          <p style="font-size: 0.8rem; color: var(--text-sub);">Property managers struggle to audit tenant lease agreements, security deposits, and rent roll reconciliations on time.</p>
+        </div>
+
+        <div class="glass-card">
+          <div class="service-icon" style="background: rgba(59, 130, 246, 0.1); color: #3b82f6;">
+            <i class="fa-solid fa-folder-open"></i>
+          </div>
+          <h3 style="font-size: 1.1rem; color: var(--text-heading); margin: 0.75rem 0 0.5rem;">Escrow Deadline Slip-Ups</h3>
+          <p style="font-size: 0.8rem; color: var(--text-sub);">Transaction coordinators miss crucial appraisal, inspection, and title contingency deadlines due to unorganized files.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEEP-DIVE SOLUTIONS MODULES -->
+  <section id="solutions" class="bg-alt border-t border-b" style="padding: 5rem 0;">
+    <div class="container">
+      <div style="text-align: center; max-width: 36rem; margin: 0 auto 3rem;">
+        <span class="badge">Real Estate Solutions</span>
+        <h2 style="font-size: 2.25rem; font-weight: 800; color: var(--text-heading); margin-top: 0.5rem;">
+          End-to-End Real Estate Operations
+        </h2>
+        <p style="color: var(--text-sub); font-size: 0.9rem; margin-top: 0.5rem;">
+          Our virtual assistants integrate with leading real estate platforms (AppFolio, Buildium, Dotloop, KvCORE).
+        </p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+        <div class="glass-card">
+          <div class="service-icon"><i class="fa-solid fa-house-laptop"></i></div>
+          <h3 style="font-size: 1.15rem; color: var(--text-heading); margin-bottom: 0.5rem;">MLS Data Entry & Listing Uploads</h3>
+          <p style="font-size: 0.8rem; color: var(--text-sub); margin-bottom: 1rem;">Complete upload of property descriptions, high-resolution photo sequencing, feature tagging, and portal syndication.</p>
+          <ul style="list-style: none; font-size: 0.75rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.4rem;">
+            <li><i class="fa-solid fa-check" style="color: #10b981;"></i> Zillow, Trulia & MLS Syndication</li>
+            <li><i class="fa-solid fa-check" style="color: #10b981;"></i> Virtual Tour Link Embedding</li>
+          </ul>
+        </div>
+
+        <div class="glass-card">
+          <div class="service-icon"><i class="fa-solid fa-file-contract"></i></div>
+          <h3 style="font-size: 1.15rem; color: var(--text-heading); margin-bottom: 0.5rem;">Lease Audits & Rent Roll Entry</h3>
+          <p style="font-size: 0.8rem; color: var(--text-sub); margin-bottom: 1rem;">Thorough verification of lease start/end dates, escalation clauses, tenant security deposit records, and monthly rent roll entry.</p>
+          <ul style="list-style: none; font-size: 0.75rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.4rem;">
+            <li><i class="fa-solid fa-check" style="color: #10b981;"></i> AppFolio & Buildium Pre-Trained</li>
+            <li><i class="fa-solid fa-check" style="color: #10b981;"></i> Tenant Renewal Notice Triggers</li>
+          </ul>
+        </div>
+
+        <div class="glass-card">
+          <div class="service-icon"><i class="fa-solid fa-handshake"></i></div>
+          <h3 style="font-size: 1.15rem; color: var(--text-heading); margin-bottom: 0.5rem;">Transaction Coordination & Escrow Desk</h3>
+          <p style="font-size: 0.8rem; color: var(--text-sub); margin-bottom: 1rem;">Managing purchase agreements in Dotloop or SkySlope, tracking contingency timelines, ordering title reports, and buyer updates.</p>
+          <ul style="list-style: none; font-size: 0.75rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.4rem;">
+            <li><i class="fa-solid fa-check" style="color: #10b981;"></i> Sub-24 Hour Contract Audit</li>
+            <li><i class="fa-solid fa-check" style="color: #10b981;"></i> Automated Calendar Milestone Alerts</li>
+          </ul>
+        </div>
+
+        <div class="glass-card">
+          <div class="service-icon"><i class="fa-solid fa-chart-line"></i></div>
+          <h3 style="font-size: 1.15rem; color: var(--text-heading); margin-bottom: 0.5rem;">CMA Valuation & Mortgage Pre-Qual</h3>
+          <p style="font-size: 0.8rem; color: var(--text-sub); margin-bottom: 1rem;">Comparative Market Analysis (CMA) report compilation, neighborhood comp gathering, and initial buyer mortgage pre-qualification document collection.</p>
+          <ul style="list-style: none; font-size: 0.75rem; color: var(--text-muted); display: flex; flex-direction: column; gap: 0.4rem;">
+            <li><i class="fa-solid fa-check" style="color: #10b981;"></i> Professional Presentation Deck CMAs</li>
+            <li><i class="fa-solid fa-check" style="color: #10b981;"></i> Buyer Lead Qualification Pre-Screening</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDY PROOF POINT -->
+  <section style="padding: 5rem 0;">
+    <div class="container">
+      <div class="glass-card" style="padding: 3rem; border-color: var(--royal-500); text-align: center;">
+        <span class="badge" style="margin-bottom: 1rem;">Real Estate Brokerage Proof</span>
+        <h2 style="font-size: 2rem; font-weight: 800; color: var(--text-heading); margin-bottom: 1rem;">
+          Beacon Real Estate & Asset Management
+        </h2>
+        <p style="color: var(--text-sub); font-size: 0.95rem; max-width: 40rem; margin: 0 auto 2rem;">
+          Beacon Real Estate assigned 450 residential rental units to EOG's lease auditing squad, reducing tenant onboarding delay by 60% and capturing $32,000 in unbilled utility adjustments.
+        </p>
+        <div style="display: flex; gap: 3rem; justify-content: center; flex-wrap: wrap; margin-bottom: 2rem;">
+          <div>
+            <h3 class="text-gradient" style="font-size: 2.5rem; font-weight: 800;">60%</h3>
+            <p style="font-size: 0.75rem; color: var(--text-muted); font-weight: 700;">Faster Tenant Onboarding</p>
+          </div>
+          <div>
+            <h3 class="text-gradient" style="font-size: 2.5rem; font-weight: 800;">450+</h3>
+            <p style="font-size: 0.75rem; color: var(--text-muted); font-weight: 700;">Leases Audited & Managed</p>
+          </div>
+        </div>
+        <a href="#contact" class="btn btn-primary btn-shine">Book Real Estate Consultation</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ SECTION -->
+  <section class="bg-alt border-t" style="padding: 5rem 0;">
+    <div class="container">
+      <div style="text-align: center; max-width: 36rem; margin: 0 auto 3rem;">
+        <span class="badge">FAQ</span>
+        <h2 style="font-size: 2.25rem; font-weight: 800; color: var(--text-heading); margin-top: 0.5rem;">
+          Real Estate Operations FAQs
+        </h2>
+      </div>
+
+      <div class="faq-list" style="max-width: 48rem; margin: 0 auto;">
+        <div class="faq-item active">
+          <button class="faq-question">
+            Which real estate CRM and property management software do you support?
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            Our virtual assistants are experienced in AppFolio, Buildium, Yardi, Dotloop, SkySlope, KvCORE, Follow Up Boss, and Matrix MLS systems.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Can your assistants handle direct client/buyer phone calls?
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            Yes. We provide dedicated virtual assistants for inbound lead qualification, showing scheduling, and tenant inquiry management with native US English fluency.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            How do you bill for real estate transaction coordination?
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </button>
+          <div class="faq-answer">
+            We offer flexible dedicated monthly assistant allocations (Starter, Professional, Enterprise) or custom per-transaction coordination plans depending on your deal volume.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- IN-PAGE EMBEDDED CONSULTATION FORM -->
+  <section id="contact" style="padding: 5rem 0;">
+    <div class="container" style="max-width: 50rem;">
+      <div class="glass-card" style="padding: 3rem;">
+        <div style="text-align: center; margin-bottom: 2rem;">
+          <span class="badge">Book Real Estate Consultation</span>
+          <h2 style="font-size: 2rem; font-weight: 800; color: var(--text-heading); margin-top: 0.5rem;">
+            Scale Your Property Operations Today
+          </h2>
+          <p style="color: var(--text-sub); font-size: 0.85rem; margin-top: 0.5rem;">
+            Connect directly with an EOG real estate operations executive to streamline your brokerage or property management desk.
+          </p>
+        </div>
+
+        <form id="contact-form" action="https://formsubmit.co/info@eliteopsglobal.com" method="POST">
+          <input type="hidden" name="_subject" value="New Real Estate Operations Inquiry - EliteOps Global">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="_honey" style="display:none">
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Full Name *</label>
+              <input type="text" name="name" required placeholder="Mark Henderson">
+            </div>
+            <div class="form-group">
+              <label>Brokerage / Property Management Company *</label>
+              <input type="text" name="company" required placeholder="Beacon Real Estate Group">
+            </div>
+            <div class="form-group">
+              <label>Phone Number *</label>
+              <input type="text" name="phone" required placeholder="+1 (555) 000-0000">
+            </div>
+            <div class="form-group">
+              <label>Work Email Address *</label>
+              <input type="email" name="email" required placeholder="mark@beaconrealty.com">
+            </div>
+            <div class="form-group full">
+              <label>Primary Service Focus</label>
+              <select name="service">
+                <option value="Real Estate - MLS Listing Uploads" selected>MLS Listing Uploads & Portal Syndication</option>
+                <option value="Real Estate - Lease Audits & Rent Roll">Lease Auditing & AppFolio / Buildium Entry</option>
+                <option value="Real Estate - Transaction Coordination">Transaction Coordination & Escrow Management</option>
+                <option value="Real Estate - Lead Qualification & CMA">Buyer Lead Qualification & CMA Report Deck</option>
+              </select>
+            </div>
+            <div class="form-group full">
+              <label>Tell Us About Your Property Volume & Main Bottleneck *</label>
+              <textarea name="message" rows="4" required placeholder="Mention your property software (e.g. AppFolio, Dotloop), active listing count, and primary operational bottleneck..."></textarea>
+            </div>
+            <div class="form-group full" style="margin-top: 0.5rem;">
+              <button type="submit" class="btn btn-primary btn-shine" style="width: 100%;">Submit Real Estate Inquiry <i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+          </div>
+          <div class="form-msg" style="margin-top: 1rem; display: none; font-size: 0.85rem; padding: 0.75rem; border-radius: 0.5rem; text-align: center;"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer class="footer">
-    <div class="container" style="text-align: center; font-size: 0.8rem; color: var(--text-muted);">
-      <p>&copy; 2026 EliteOps Global. All rights reserved. | Inquiries: <a href="mailto:eliteopsglobal@gmail.com" style="color: var(--royal-500);">eliteopsglobal@gmail.com</a></p>
+    <div class="container footer-grid">
+      <div>
+        <a href="../index.html" class="logo-link">
+          <img src="../logo.png" alt="EliteOps Global Logo">
+        </a>
+        <p style="font-size: 0.85rem; color: var(--text-sub); margin-top: 1rem; max-width: 22rem;">
+          EliteOps Global (EOG) is an enterprise outsourcing and digital transformation partner delivering reliable back-office operations worldwide.
+        </p>
+        <div style="display: flex; gap: 0.5rem; margin-top: 1.25rem;">
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="LinkedIn" style="width: 2.25rem; height: 2.25rem; font-size: 0.95rem;">
+            <i class="fa-brands fa-linkedin-in"></i>
+          </a>
+          <a href="https://x.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Twitter X" style="width: 2.25rem; height: 2.25rem; font-size: 0.95rem;">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram" style="width: 2.25rem; height: 2.25rem; font-size: 0.95rem;">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook" style="width: 2.25rem; height: 2.25rem; font-size: 0.95rem;">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+          <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="WhatsApp" style="width: 2.25rem; height: 2.25rem; font-size: 0.95rem;">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4>Services</h4>
+        <ul class="footer-links">
+          <li><a href="../services/virtual-assistance.html">Virtual Assistance</a></li>
+          <li><a href="../services/administrative-support.html">Administrative Support</a></li>
+          <li><a href="../services/web-development.html">Web Development</a></li>
+          <li><a href="../services/business-automation.html">Business Automation</a></li>
+          <li><a href="../services/e-commerce-management.html">E-Commerce Management</a></li>
+          <li><a href="../services/data-processing.html">Data Processing</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Industries</h4>
+        <ul class="footer-links">
+          <li><a href="insurance.html">Insurance Agencies</a></li>
+          <li><a href="education.html">Educational Solutions</a></li>
+          <li><a href="healthcare.html">Hospitals & Clinics</a></li>
+          <li><a href="real-estate.html">Real Estate & Finance</a></li>
+          <li><a href="startups.html">Startups & SMEs</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Newsletter</h4>
+        <p style="font-size: 0.8rem; color: var(--text-sub); margin-bottom: 1rem;">Stay updated with industry insights and tech trends.</p>
+        <form id="newsletter-form" action="https://formsubmit.co/info@eliteopsglobal.com" method="POST">
+          <input type="hidden" name="_subject" value="New Newsletter Subscription - EliteOps Global">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="text" name="_honey" style="display:none">
+          <input type="email" name="email" required placeholder="Your email" style="font-size: 0.8rem;">
+          <button type="submit" class="btn btn-primary btn-shine" style="padding: 0.6rem 1rem;"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+        <div class="form-msg" style="margin-top: 0.5rem; display: none; font-size: 0.75rem;"></div>
+      </div>
+    </div>
+
+    <div class="container border-t" style="padding-top: 2rem; display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--text-muted); flex-wrap: wrap; gap: 1rem;">
+      <p>&copy; 2026 EliteOps Global. All rights reserved.</p>
+      <div>Email: <a href="mailto:info@eliteopsglobal.com" style="color: var(--royal-500); font-weight: 700;">info@eliteopsglobal.com</a></div>
     </div>
   </footer>
 
