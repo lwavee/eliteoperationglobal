@@ -1,7 +1,7 @@
 /* ==========================================================================
    EliteOps Global (EOG) - Static JavaScript Animation & Interaction Engine
    Activated FormSubmit In-Page AJAX Engine (No Redirection to External Pages)
-   Target Email: info@eliteopsglobal.com
+   Target Email: info@eliteoperationglobal.com
    ========================================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -303,7 +303,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Determine target AJAX endpoint
-    const actionUrl = formElement.getAttribute('action') || 'https://formsubmit.co/info@eliteopsglobal.com';
+    const actionUrl = formElement.getAttribute('action') || 'https://formsubmit.co/info@eliteoperationglobal.com';
     const ajaxEndpoint = actionUrl.includes('/ajax/') 
       ? actionUrl 
       : actionUrl.replace('formsubmit.co/', 'formsubmit.co/ajax/');
