@@ -152,33 +152,85 @@ button, input, select, textarea {
   100% { left: 100%; }
 }
 
-/* --- TRAILING CUSTOM CURSOR --- */
+/* --- ULTRA-MODERN INTERACTIVE SAAS CURSOR --- */
 .custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 20px;
   height: 20px;
-  border: 2px solid #2563eb;
   border-radius: 50%;
-  position: fixed;
-  transform: translate(-50%, -50%);
+  border: 1.5px solid rgba(37, 99, 235, 0.45);
+  background: rgba(37, 99, 235, 0.03);
   pointer-events: none;
   z-index: 99999;
-  transition: width 0.2s, height 0.2s, background-color 0.2s;
-  mix-blend-mode: difference;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              height 0.3s cubic-bezier(0.16, 1, 0.3, 1),
+              background-color 0.3s ease,
+              border-color 0.3s ease,
+              opacity 0.3s ease,
+              transform 0.15s ease;
+  opacity: 0;
+}
+
+html.dark .custom-cursor {
+  border-color: rgba(96, 165, 250, 0.6);
+  background: rgba(96, 165, 250, 0.05);
+  box-shadow: 0 0 12px rgba(37, 99, 235, 0.25);
 }
 
 .custom-cursor-dot {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 4px;
   height: 4px;
-  background-color: #2563eb;
   border-radius: 50%;
-  position: fixed;
-  transform: translate(-50%, -50%);
+  background-color: #2563eb;
   pointer-events: none;
   z-index: 99999;
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease, background-color 0.3s ease, opacity 0.3s ease;
+  box-shadow: 0 0 8px rgba(37, 99, 235, 0.6);
+  opacity: 0;
+}
+
+html.dark .custom-cursor-dot {
+  background-color: #60a5fa;
+  box-shadow: 0 0 8px rgba(96, 165, 250, 0.8);
+}
+
+/* Interactive Hover Transformation (Sleek Compact Expansion) */
+.custom-cursor.hovered {
+  width: 34px;
+  height: 34px;
+  background: rgba(37, 99, 235, 0.08);
+  border-color: rgba(37, 99, 235, 0.75);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+}
+
+html.dark .custom-cursor.hovered {
+  background: rgba(96, 165, 250, 0.12);
+  border-color: rgba(147, 197, 253, 0.9);
+  box-shadow: 0 0 18px rgba(59, 130, 246, 0.35);
+}
+
+.custom-cursor-dot.hovered {
+  width: 3px;
+  height: 3px;
+  opacity: 0.5;
+}
+
+/* Tactile Click Down State */
+.custom-cursor.active {
+  transform: translate(-50%, -50%) scale(0.8);
+  background: rgba(37, 99, 235, 0.25);
 }
 
 @media (max-width: 1024px) {
-  .custom-cursor, .custom-cursor-dot { display: none; }
+  .custom-cursor, .custom-cursor-dot { display: none !important; }
 }
 
 /* --- TYPOGRAPHY & GRADIENTS --- */

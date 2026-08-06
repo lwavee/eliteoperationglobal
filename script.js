@@ -13,28 +13,74 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 700);
   }
 
-  // --- 2. TRAILING CUSTOM CURSOR ---
+  // --- 2. ULTRA-MODERN INTERACTIVE SAAS CURSOR ---
   const cursorOuter = document.querySelector('.custom-cursor');
   const cursorDot = document.querySelector('.custom-cursor-dot');
-  let mouseX = 0, mouseY = 0;
-  let outerX = 0, outerY = 0;
 
   if (cursorOuter && cursorDot) {
+    let mouseX = -100, mouseY = -100;
+    let outerX = -100, outerY = -100;
+    let isVisible = false;
+
     window.addEventListener('mousemove', (e) => {
       mouseX = e.clientX;
       mouseY = e.clientY;
+
+      if (!isVisible) {
+        isVisible = true;
+        cursorOuter.style.opacity = '1';
+        cursorDot.style.opacity = '1';
+        outerX = mouseX;
+        outerY = mouseY;
+      }
+
       cursorDot.style.left = `${mouseX}px`;
       cursorDot.style.top = `${mouseY}px`;
     });
 
+    document.addEventListener('mouseleave', () => {
+      isVisible = false;
+      cursorOuter.style.opacity = '0';
+      cursorDot.style.opacity = '0';
+    });
+
+    // Smooth Lerp Trailing for Outer Ring
     const animateCursor = () => {
-      outerX += (mouseX - outerX) * 0.15;
-      outerY += (mouseY - outerY) * 0.15;
-      cursorOuter.style.left = `${outerX}px`;
-      cursorOuter.style.top = `${outerY}px`;
+      if (isVisible) {
+        outerX += (mouseX - outerX) * 0.18;
+        outerY += (mouseY - outerY) * 0.18;
+        cursorOuter.style.left = `${outerX}px`;
+        cursorOuter.style.top = `${outerY}px`;
+      }
       requestAnimationFrame(animateCursor);
     };
     requestAnimationFrame(animateCursor);
+
+    // Interactive Hover Detectors for Buttons, Links, Cards & Inputs
+    const interactiveSelectors = 'a, button, .btn, .glass-card, .portfolio-card, input, select, textarea, .theme-toggle, .social-icon-btn, .accordion-header';
+    
+    document.addEventListener('mouseover', (e) => {
+      if (e.target.closest(interactiveSelectors)) {
+        cursorOuter.classList.add('hovered');
+        cursorDot.classList.add('hovered');
+      }
+    });
+
+    document.addEventListener('mouseout', (e) => {
+      if (e.target.closest(interactiveSelectors)) {
+        cursorOuter.classList.remove('hovered');
+        cursorDot.classList.remove('hovered');
+      }
+    });
+
+    // Mousedown / Mouseup Tactile Pulse
+    window.addEventListener('mousedown', () => {
+      cursorOuter.classList.add('active');
+    });
+
+    window.addEventListener('mouseup', () => {
+      cursorOuter.classList.remove('active');
+    });
   }
 
   // --- 3. DARK MODE / LIGHT MODE ENGINE (DEFAULT: LIGHT MODE) ---
